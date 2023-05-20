@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>productos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="container">
+    <header>
+      <img
+        src="images/fondo.jpeg"
+        alt="Imagen de fondo de la página de decoración del hogar"
+      />
+      <nav>
+        <ul>
+          <li><a href="index.html" aria-label="Ir a la página de inicio">Inicio</a></li>
+          <li>
+            <a href="productos.html" aria-label="Ver categorías de decoración"
+              >Productos</a
+            >
+          </li>
+          <li>
+            <a href="formulario.html" aria-label="Ir a la página de contacto"
+              >Contacto</a
+            >
+          </li>
+          <li>
+            <a href="ubicacion.html" aria-label="Ir a la página de ubicacion"
+              >Ubicacion</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <h1>Decoración del Hogar</h1>
+      <h2>Visita nuestra coleccion</h2>
+    </header>
+    <main>
+      <section>
+        <div id="app">
+          <article class="producto">
+            <div v-for="producto in datos.data" class="card">
+              <img :src="producto.imagen" alt="" />
+              <h3>{{ producto.nombre }}</h3>
+              <p>{{ producto.precio }}</p>
+              <!-- <p>{{ producto.descripcion }}</p> -->
+            </div>
+          </article>
+        </div>
+      </section>
+      
+      <section>
+        <div>
+          <h2>Productos Recientes Recientes</h2>
+          <h3>Tendencias en decoración de cocinas</h3>
+        </div>
+      </section>
+
+      <aside>
+        <h2>Categorías</h2>
+        <ul>
+          <li>
+            <a href="#" aria-label="Ver artículos de decoración para cocinas"
+              >Cocinas</a
+            >
+          </li>
+          <li>
+            <a href="#" aria-label="Ver artículos de decoración para baños"
+              >Baños</a
+            >
+          </li>
+          <li>
+            <a href="#" aria-label="Ver artículos de decoración para salones"
+              >Salones</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              aria-label="Ver artículos de decoración para dormitorios"
+              >Dormitorios</a
+            >
+          </li>
+        </ul>
+      </aside>
+    </main>
+    <footer>
+      <p>Derechos de autor © 2023 - Decoración del Hogar</p>
+    </footer>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="api.js"></script>
+  </body>
+</html>

@@ -15,6 +15,8 @@ body {
   padding: 0 20px;
 }
 
+
+
 header {
   position: relative;
   text-align: center;
@@ -25,7 +27,7 @@ header img {
   height: auto;
 }
 
-img{
+img {
   height: 350px;
   width: 350px;
 }
@@ -69,7 +71,18 @@ h1 {
   margin: 0;
 }
 
-
+.img-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.img-container img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  margin: 0 10px;
+}
 
 main {
   display: flex;
@@ -85,43 +98,60 @@ section {
 section div {
   padding: 5px;
   background-color: #f9f9f9;
+  text-align: justify;
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.producto {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
+  gap: 1rem;
+}
+
+.producto1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
+  gap: 1rem;
+  
 }
 
 
-.producto{
-display: flex;
-flex-wrap: wrap;
-margin: 1rem;
-gap: 1rem;
 
-}
 .card {
   border: 1px solid #dddddd;
   border-radius: 5px;
   background-color: #ffffff;
-
 }
-
 
 .card img {
-
   height: auto;
 }
-
 
 article p {
   text-decoration: none;
   color: #12c0a9;
-text-align: center;
-
+  text-align: center;
 }
 article h3 {
   text-decoration: none;
   color: #918f8f;
-text-align: center;
+  text-align: center;
 }
-
-
 
 aside {
   flex-basis: calc(25% - 20px);
@@ -153,6 +183,10 @@ footer {
   color: #fff;
   text-align: center;
   padding: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (max-width: 768px) {
   header img {
@@ -173,6 +207,7 @@ footer {
 
   main section div {
     padding: 20px;
+    text-align: justify;
   }
 
   main section div div {
@@ -198,5 +233,48 @@ footer {
   aside li {
     font-size: 16px;
     margin-bottom: 10px;
+  }
+}
+
+/* Estilos para pantallas medianas */
+@media screen and (max-width: 1199px) and (min-width: 769px) {
+  header img {
+    height: 300px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  main section div {
+    padding: 20px;
+  }
+
+  main section div div {
+    font-size: 14px;
+  }
+
+  section article div {
+    padding: 15px;
+  }
+
+  section article div h3 {
+    font-size: 22px;
+  }
+
+  section article div p {
+    font-size: 12px;
+  }
+
+  aside ul {
+    margin-left: 20px;
+  }
+
+  aside li {
+    font-size: 14px;
   }
 }
