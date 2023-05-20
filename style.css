@@ -169,6 +169,7 @@ nav li:hover {
 
 .card img {
   height: auto;
+ 
   transition: transform 0.3s ease-in-out;
 }
 
@@ -242,6 +243,12 @@ footer {
   header img {
     height: 200px;
   }
+
+.card img {
+  height: auto; 
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
 
   nav {
     top: 20px;
@@ -328,3 +335,4 @@ footer {
     font-size: 14px;
   }
 }
+
