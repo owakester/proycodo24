@@ -1,3 +1,4 @@
+/* Estilos generales */
 * {
   box-sizing: border-box;
 }
@@ -15,8 +16,7 @@ body {
   padding: 0 20px;
 }
 
-
-
+/* Estilos de encabezado */
 header {
   position: relative;
   text-align: center;
@@ -27,11 +27,13 @@ header img {
   height: auto;
 }
 
+/* Estilos de imágenes */
 img {
   height: 350px;
   width: 350px;
 }
 
+/* Estilos de navegación */
 nav {
   position: absolute;
   top: 20px;
@@ -60,6 +62,7 @@ nav a:hover {
   opacity: 0.7;
 }
 
+/* Estilos de títulos */
 h1 {
   position: absolute;
   top: 50%;
@@ -71,12 +74,33 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  color: #b0b0b0;
+  font-size: 28px;
+  margin: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 8px;
+}
+
+h3 {
+  color: #35ce9e;
+  font-size: 24px;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Estilos de contenedores de imágenes */
 .img-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 20px;
 }
+
 .img-container img {
   width: 30px;
   height: 30px;
@@ -84,6 +108,7 @@ h1 {
   margin: 0 10px;
 }
 
+/* Estilos principales */
 main {
   display: flex;
   flex-wrap: wrap;
@@ -101,12 +126,14 @@ section div {
   text-align: justify;
 }
 
+/* Estilos del mapa responsivo */
 .map-responsive {
   overflow: hidden;
   padding-bottom: 56.25%;
   position: relative;
   height: 0;
 }
+
 .map-responsive iframe {
   left: 0;
   top: 0;
@@ -115,6 +142,7 @@ section div {
   position: absolute;
 }
 
+/* Estilos de productos */
 .producto {
   display: flex;
   flex-wrap: wrap;
@@ -127,11 +155,28 @@ section div {
   flex-wrap: wrap;
   margin: 1rem;
   gap: 1rem;
-  
+}
+/* Estilos de animación */
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+  transition: opacity 0.3s ease-in-out;
 }
 
+nav li:hover {
+  opacity: 0.7;
+}
 
+.card img {
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
 
+.card img:hover {
+  transform: scale(1.1);
+}
+
+/* Estilos de tarjetas */
 .card {
   border: 1px solid #dddddd;
   border-radius: 5px;
@@ -142,17 +187,20 @@ section div {
   height: auto;
 }
 
+/* Estilos de artículo */
 article p {
   text-decoration: none;
   color: #12c0a9;
   text-align: center;
 }
+
 article h3 {
   text-decoration: none;
   color: #918f8f;
   text-align: center;
 }
 
+/* Estilos de barra lateral */
 aside {
   flex-basis: calc(25% - 20px);
   margin-left: 20px;
@@ -178,16 +226,18 @@ aside a:hover {
   color: #999;
 }
 
+/* Estilos de pie de página */
 footer {
   background-color: #333;
   color: #fff;
   text-align: center;
   padding: 20px;
-
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+/* Estilos para pantallas pequeñas */
 @media screen and (max-width: 768px) {
   header img {
     height: 200px;
